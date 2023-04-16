@@ -1,0 +1,34 @@
+@import "@styles/variables.scss";
+
+header {
+	$header-height: 45px !important;
+	height: $header-height;
+	line-height: $header-height;
+	border-bottom: 0.5px solid rgb(186, 186, 186);
+
+	background-color: white !important;
+
+	a {
+		display: inline-block;
+		text-align: center;
+		height: 100%;
+		color: black;
+		font-weight: 600;
+		font-size: 14px;
+		margin-right: 20px;
+
+		&:hover {
+			color: black;
+		}
+	}
+
+	.selected {
+		color: $close-blue !important;
+		text-decoration: underline;
+		font-weight: 700;
+	}
+
+	img.logo {
+		margin-right: 10px;
+	}
+}

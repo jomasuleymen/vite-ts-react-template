@@ -1,0 +1,24 @@
+$headerbottomcolor: #cccccc;
+$border-radius: 8px;
+
+$green: #018000;
+$open-green: #eaffe9;
+$red: #cc0910;
+$close-blue: #0a2882;
+
+.custom-scroll-bar {
+	::-webkit-scrollbar {
+		width: 3.5px;
+		height: 8px;
+	}
+	::-webkit-scrollbar-track {
+		background: #f1f1f1;
+	}
+	::-webkit-scrollbar-thumb {
+		background: rgb(159, 159, 159);
+		border-radius: 10px;
+	}
+	::-webkit-scrollbar-thumb:hover {
+		background: rgb(141, 141, 141);
+	}
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import "./variables.scss";
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif !important;
+}
+
+html,
+body,
+#root {
+	padding: 0;
+	margin: 0 auto;
+	background-color: #f1f5fa;
+
+	min-width: 1400px !important;
+}
+
+.width-wrapper {
+	min-width: 1320px !important;
+	max-width: 1320px !important;
+
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+/* .content */
+main {
+	margin: 24px 16px 0;
+	background-color: white;
+	padding: 15px 22px;
+	border-radius: $border-radius;
+	box-shadow: 0 4px 24px rgb(88 102 126 / 8%), 0 1px 2px rgb(88 102 126 / 12%);
+}

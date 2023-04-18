@@ -2,10 +2,10 @@ import { Layout } from "antd";
 import React, { Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 
-import Header from "@components/Header/Header";
+import Header from "@components/Header";
 
-import "antd/dist/reset.css";
 import "@styles/global.scss";
+import "antd/dist/reset.css";
 
 const Hello = React.lazy(() => import("@pages/Hello"));
 
@@ -14,7 +14,7 @@ const App = () => {
 		<Layout className="layout">
 			<Header />
 			<Layout.Content className="width-wrapper">
-				<Suspense fallback={<div>Loading...</div>}>
+				<Suspense fallback={<div>Loading..</div>}>
 					<Routes>
 						<Route path="/" element={<Navigate to="/hello" replace={true} />} />
 						<Route path="/hello" element={<Hello />} />

@@ -24,12 +24,12 @@
 		"isolatedModules": true,
 		"noEmit": true,
 		"jsx": "react-jsx",
+		"baseUrl": "src",
 		"paths": {
-			"@store/*": ["./src/store/*"],
-			"@public/*": ["./public/*"],
-			"@styles/*": ["./src/styles/*"],
-			"@pages/*": ["./src/pages/*"],
-			"@components/*": ["./src/components/*"]
+			"@store/*": ["store/*"],
+			"@styles/*": ["styles/*"],
+			"@pages/*": ["pages/*"],
+			"@components/*": ["components/*"]
 		}
 	},
 	"include": ["src"],
